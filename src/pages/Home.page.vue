@@ -10,8 +10,8 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
 const { t } = useI18n();
+useHead({ title: computed(() => t('app.title', 'IT Tools - Handy online tools for developers')) });
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
 

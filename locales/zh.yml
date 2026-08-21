@@ -1,3 +1,8 @@
+app:
+  name: '我的应用'
+  title: '我的应用'
+  aboutTitle: '关于 - 我的应用'
+  notFoundTitle: '页面不存在 - 我的应用'
 home:
   categories:
     newestTools: '最新工具'
