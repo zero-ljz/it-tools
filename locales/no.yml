@@ -1,3 +1,8 @@
+app:
+  name: 'My App'
+  title: 'My App'
+  aboutTitle: 'Om My App'
+  notFoundTitle: 'Siden ble ikke funnet - My App'
 home:
   categories:
     newestTools: Nyeste verktøy
@@ -9,27 +14,27 @@ home:
   home: Hjem
   uiLib: 'UI Bib'
   follow:
-    title: 'Liker du it-tools?'
+    title: 'Liker du My App?'
     p1: 'Gi oss en stjerne på'
-    githubRepository: 'IT-Tools GitHub-depotet'
+    githubRepository: 'My App GitHub-depotet'
     thankYou: 'Tusen takk!'
   nav:
     github: 'GitHub-depot'
-    githubRepository: 'IT-Tools GitHub-depot'
-    about: 'Om  IT-Tools'
+    githubRepository: 'My App GitHub-depot'
+    about: 'Om My App'
     aboutLabel: 'Om'
     darkMode: 'Mørk modus'
     lightMode: 'Lys modus'
     mode: 'Veksle mørk/lys modus'
 about:
   content: >
-    # Om IT-Tools
+    # Om My App
 
-    Dette nettstedet er en modifisert versjon av IT-Tools, opprinnelig utviklet av Corentin Thomasset. Den [modifiserte kildekoden](https://github.com/zero-ljz/it-tools) er fortsatt publisert under GPL-3.0-lisensen.
+    My App er en modifisert versjon av IT-Tools, opprinnelig utviklet av Corentin Thomasset. Den [modifiserte kildekoden](https://github.com/zero-ljz/it-tools) er fortsatt publisert under GPL-3.0-lisensen.
 
     ## Teknologier
 
-    IT Tools er laget i Vue.js (Vue 3) med Naive UI komponent bibliotektet. Tredjeparts åpen-kildekode biblioteker er brukt i noen verktøy, du kan finne den komplette listen i [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) filen i depoet.
+    My App er laget i Vue.js (Vue 3) med Naive UI komponent bibliotektet. Tredjeparts åpen-kildekode biblioteker er brukt i noen verktøy, du kan finne den komplette listen i [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) filen i depoet.
 
     ## Funnet en feil? Et verktøy som mangler?
 

@@ -1,3 +1,8 @@
+app:
+  name: 'My App'
+  title: 'My App'
+  aboutTitle: 'Über My App'
+  notFoundTitle: 'Seite nicht gefunden - My App'
 '404':
   notFound: 404 Nicht gefunden
   sorry: Entschuldigung, diese Seite scheint nicht zu existieren
@@ -16,30 +21,30 @@ home:
   home: Startseite
   uiLib: UI-Bibliothek
   follow:
-    title: Magst du IT-Tools?
+    title: Magst du My App?
     p1: Gib uns einen Stern auf
-    githubRepository: IT-Tools GitHub-Repository
+    githubRepository: My App GitHub-Repository
     thankYou: Vielen Dank!
   nav:
     github: GitHub-Repository
-    githubRepository: IT-Tools GitHub-Repository
-    about: Über IT-Tools
+    githubRepository: My App GitHub-Repository
+    about: Über My App
     aboutLabel: Über
     darkMode: Dunkelmodus
     lightMode: Hellmodus
     mode: Wechseln zwischen dunklem/hellem Modus
 about:
   content: >
-    # Über IT-Tools
+    # Über My App
 
-    Diese Website ist eine modifizierte Version von IT-Tools, das ursprünglich
+    My App ist eine modifizierte Version von IT-Tools, das ursprünglich
     von Corentin Thomasset entwickelt wurde. Der
     [modifizierte Quellcode](https://github.com/zero-ljz/it-tools) wird weiterhin
     unter der GPL-3.0-Lizenz veröffentlicht.
 
     ## Technologien
 
-    IT-Tools wurde mit Vue.js (Vue 3) und der Naive UI-Komponentenbibliothek
+    My App wurde mit Vue.js (Vue 3) und der Naive UI-Komponentenbibliothek
     erstellt. In einigen Tools werden Drittanbieter-Open-Source-Bibliotheken verwendet. Du
     findest die vollständige Liste in der
     [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json)-Datei

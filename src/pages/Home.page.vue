@@ -11,7 +11,7 @@ import { config } from '@/config';
 const toolStore = useToolStore();
 
 const { t } = useI18n();
-useHead({ title: computed(() => t('app.title', 'IT Tools - Handy online tools for developers')) });
+useHead({ title: computed(() => t('app.title', 'My App')) });
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
 

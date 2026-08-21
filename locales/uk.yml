@@ -1,3 +1,8 @@
+app:
+  name: 'My App'
+  title: 'My App'
+  aboutTitle: 'Про My App'
+  notFoundTitle: 'Сторінку не знайдено - My App'
 home:
   categories:
     newestTools: Найновіші інструменти
@@ -11,25 +16,25 @@ home:
   follow:
     title: 'Вам подобаються інструменти IT?'
     p1: 'Додайте нам зірку на'
-    githubRepository: 'GitHub-репозиторій IT-Tools'
+    githubRepository: 'GitHub-репозиторій My App'
     thankYou: 'Дякуємо!'
   nav:
     github: 'GitHub-репозиторій'
-    githubRepository: 'GitHub-репозиторій IT-Tools'
-    about: 'Про IT-Tools'
+    githubRepository: 'GitHub-репозиторій My App'
+    about: 'Про My App'
     aboutLabel: 'Про нас'
     darkMode: 'Темний режим'
     lightMode: 'Світлий режим'
     mode: 'Перемикання темного/світлого режиму'
 about:
   content: >
-    # Про IT-Tools
+    # Про My App
 
-    Цей вебсайт є модифікованою версією IT-Tools, спочатку розробленою Corentin Thomasset. [Модифікований вихідний код](https://github.com/zero-ljz/it-tools) надалі публікується за ліцензією GPL-3.0.
+    My App є модифікованою версією IT-Tools, спочатку розробленою Corentin Thomasset. [Модифікований вихідний код](https://github.com/zero-ljz/it-tools) надалі публікується за ліцензією GPL-3.0.
 
     ## Технології
 
-    IT Tools виконаний на Vue.js (Vue 3) з використанням бібліотеки компонентів Naive UI. У деяких інструментах використовуються сторонні відкриті бібліотеки, повний список яких ви можете знайти в файлі [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) репозиторію.
+    My App виконаний на Vue.js (Vue 3) з використанням бібліотеки компонентів Naive UI. У деяких інструментах використовуються сторонні відкриті бібліотеки, повний список яких ви можете знайти в файлі [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) репозиторію.
 
     ## Знайшли баг? Відсутній інструмент?
 

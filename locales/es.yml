@@ -1,3 +1,8 @@
+app:
+  name: 'My App'
+  title: 'My App'
+  aboutTitle: 'Sobre My App'
+  notFoundTitle: 'Página no encontrada - My App'
 home:
   categories:
     newestTools: Nuevas herramientas
@@ -9,27 +14,27 @@ home:
   home: Home
   uiLib: 'UI Lib'
   follow:
-    title: 'Te gustan las it-tools?'
+    title: '¿Te gusta My App?'
     p1: 'Danos una estrella en'
-    githubRepository: 'Repositorio de IT-Tools en GitHub'
+    githubRepository: 'Repositorio de My App en GitHub'
     thankYou: 'Muchas gracias!'
   nav:
     github: 'Repositorio en github'
-    githubRepository: 'IT-Tools GitHub repository'
-    about: 'Sobre  IT-Tools'
+    githubRepository: 'Repositorio de My App en GitHub'
+    about: 'Sobre My App'
     aboutLabel: 'Sobre'
     darkMode: 'Modo obscuro'
     lightMode: 'Modo claro'
     mode: 'Alternar modo oscuro/claro'
 about:
   content: >
-    # Sobre IT-Tools
+    # Sobre My App
 
-    Este sitio web es una versión modificada de IT-Tools, desarrollado originalmente por Corentin Thomasset. El [código fuente modificado](https://github.com/zero-ljz/it-tools) permanece publicado bajo la licencia GPL-3.0.
+    My App es una versión modificada de IT-Tools, desarrollado originalmente por Corentin Thomasset. El [código fuente modificado](https://github.com/zero-ljz/it-tools) permanece publicado bajo la licencia GPL-3.0.
 
     ## Tecnologías
 
-    IT Tools está creado en Vue.js (Vue 3) con la biblioteca de componentes Naive UI. En algunas herramientas se utilizan bibliotecas de código abierto de terceros; puede encontrar la lista completa en [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) archivo del repositorio.
+    My App está creado en Vue.js (Vue 3) con la biblioteca de componentes Naive UI. En algunas herramientas se utilizan bibliotecas de código abierto de terceros; puede encontrar la lista completa en [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) archivo del repositorio.
 
     ## ¿Encontraste un error? ¿Falta una herramienta?
 

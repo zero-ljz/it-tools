@@ -1,3 +1,8 @@
+app:
+  name: 'My App'
+  title: 'My App'
+  aboutTitle: 'Giới thiệu - My App'
+  notFoundTitle: 'Không tìm thấy trang - My App'
 home:
   categories:
     newestTools: Công cụ mới nhất
@@ -11,25 +16,25 @@ home:
   follow:
     title: 'Bạn thích IT-tools?'
     p1: 'Hãy cho chúng tôi một ngôi sao trên'
-    githubRepository: 'Kho GitHub IT-Tools'
+    githubRepository: 'Kho GitHub My App'
     thankYou: 'Cảm ơn bạn!'
   nav:
     github: 'Kho GitHub'
-    githubRepository: 'Kho GitHub IT-Tools'
-    about: 'Về IT-Tools'
+    githubRepository: 'Kho GitHub My App'
+    about: 'Về My App'
     aboutLabel: 'Giới thiệu'
     darkMode: 'Chế độ tối'
     lightMode: 'Chế độ sáng'
     mode: 'Chuyển đổi chế độ tối/sáng'
 about:
   content: >
-    # Về IT-Tools
+    # Về My App
 
-    Trang web này là phiên bản đã sửa đổi của IT-Tools, ban đầu do Corentin Thomasset phát triển. [Mã nguồn đã sửa đổi](https://github.com/zero-ljz/it-tools) tiếp tục được phát hành theo giấy phép GPL-3.0.
+    My App là phiên bản đã sửa đổi của IT-Tools, ban đầu do Corentin Thomasset phát triển. [Mã nguồn đã sửa đổi](https://github.com/zero-ljz/it-tools) tiếp tục được phát hành theo giấy phép GPL-3.0.
 
     ## Công nghệ
 
-    IT Tools được tạo ra bằng Vue.js (Vue 3) với thư viện thành phần Naive UI. Các thư viện mã nguồn mở của bên thứ ba được sử dụng trong một số công cụ, bạn có thể tìm danh sách đầy đủ trong file [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) của kho lưu trữ.
+    My App được tạo ra bằng Vue.js (Vue 3) với thư viện thành phần Naive UI. Các thư viện mã nguồn mở của bên thứ ba được sử dụng trong một số công cụ, bạn có thể tìm danh sách đầy đủ trong file [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) của kho lưu trữ.
 
     ## Phát hiện lỗi? Một công cụ bị thiếu?
 

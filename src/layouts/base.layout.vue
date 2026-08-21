@@ -60,7 +60,7 @@ const tools = computed<ToolCategory[]>(() => [
 
         <div class="footer">
           <div>
-            {{ $t('app.name', 'IT-Tools') }}
+            {{ $t('app.name', 'My App') }}
 
             <c-link target="_blank" rel="noopener" :href="sourceUrl">
               v{{ version }}

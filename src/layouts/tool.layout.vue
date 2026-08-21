@@ -15,7 +15,7 @@ const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, Strin
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
 
 const head = computed<HeadObject>(() => ({
-  title: `${toolTitle.value} - ${t('app.name', 'IT Tools')}`,
+  title: `${toolTitle.value} - ${t('app.name', 'My App')}`,
   meta: [
     {
       name: 'description',

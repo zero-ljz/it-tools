@@ -21,20 +21,20 @@ home:
   nav:
     github: 'GitHub 仓库'
     githubRepository: 'GitHub 仓库'
-    about: '关于 IT-Tools'
+    about: '关于我的应用'
     aboutLabel: '关于'
     darkMode: '深色模式'
     lightMode: '浅色模式'
     mode: '颜色模式'
 about:
   content: >
-    # 关于 IT-Tools
+    # 关于我的应用
 
-    本站是 Corentin Thomasset 开发的 IT-Tools 的修改版本，汇集了对开发人员和 IT 从业者有用的工具。本站自 2026 年 8 月起进行修改，并继续依据 GPL-3.0 许可证发布；[修改版源码](https://github.com/zero-ljz/it-tools)可公开获取。
+    我的应用是 Corentin Thomasset 开发的 IT-Tools 的修改版本，汇集了对开发人员和 IT 从业者有用的工具。本站自 2026 年 8 月起进行修改，并继续依据 GPL-3.0 许可证发布；[修改版源码](https://github.com/zero-ljz/it-tools)可公开获取。
 
     ## 技术
 
-    IT-Tools 采用 Vue.js（Vue 3）和 Naive UI 组件库开发，本修改版通过腾讯 EdgeOne Pages 部署。某些工具使用了第三方开源库，您可以在仓库的 [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) 文件中找到完整的列表。
+    我的应用采用 Vue.js（Vue 3）和 Naive UI 组件库开发，并通过腾讯 EdgeOne Pages 部署。某些工具使用了第三方开源库，您可以在仓库的 [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) 文件中找到完整的列表。
 
     ## 发现了 Bug？缺少工具？
 

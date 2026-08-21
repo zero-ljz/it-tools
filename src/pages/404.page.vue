@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head';
 
 const { t } = useI18n();
-useHead({ title: computed(() => t('app.notFoundTitle', 'Page not found - IT Tools')) });
+useHead({ title: computed(() => t('app.notFoundTitle', 'Page not found - My App')) });
 </script>
 
 <template>

@@ -1,3 +1,8 @@
+app:
+  name: 'My App'
+  title: 'My App'
+  aboutTitle: 'About - My App'
+  notFoundTitle: 'Page not found - My App'
 home:
   categories:
     newestTools: Newest tools
@@ -9,27 +14,27 @@ home:
   home: Home
   uiLib: 'UI Lib'
   follow:
-    title: 'You like it-tools?'
+    title: 'You like My App?'
     p1: 'Give us a star on'
-    githubRepository: 'IT-Tools GitHub repository'
+    githubRepository: 'My App GitHub repository'
     thankYou: 'Thank you!'
   nav:
     github: 'GitHub repository'
-    githubRepository: 'IT-Tools GitHub repository'
-    about: 'About  IT-Tools'
+    githubRepository: 'My App GitHub repository'
+    about: 'About My App'
     aboutLabel: 'About'
     darkMode: 'Dark mode'
     lightMode: 'Light mode'
     mode: 'Toggle dark/light mode'
 about:
   content: >
-    # About IT-Tools
+    # About My App
 
-    This website is a modified version of IT-Tools, originally developed by Corentin Thomasset. Modifications began in August 2026 and continue to be published under the GPL-3.0 license. The [modified source code](https://github.com/zero-ljz/it-tools) is publicly available.
+    My App is a modified version of IT-Tools, originally developed by Corentin Thomasset. Modifications began in August 2026 and continue to be published under the GPL-3.0 license. The [modified source code](https://github.com/zero-ljz/it-tools) is publicly available.
 
     ## Technologies
 
-    IT Tools is made in Vue.js (Vue 3) with the Naive UI component library. This modified version is deployed with Tencent EdgeOne Pages. Third-party open-source libraries are used in some tools; you may find the complete list in the repository's [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) file.
+    My App is made in Vue.js (Vue 3) with the Naive UI component library and is deployed with Tencent EdgeOne Pages. Third-party open-source libraries are used in some tools; you may find the complete list in the repository's [package.json](https://github.com/zero-ljz/it-tools/blob/main/package.json) file.
 
     ## Found a bug? A tool is missing?
 

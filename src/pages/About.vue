@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head';
 
 const { t } = useI18n();
-useHead({ title: computed(() => t('app.aboutTitle', 'About - IT Tools')) });
+useHead({ title: computed(() => t('app.aboutTitle', 'About - My App')) });
 </script>
 
 <template>
