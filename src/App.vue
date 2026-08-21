@@ -4,6 +4,7 @@ import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme } from
 import { darkThemeOverrides, lightThemeOverrides } from './themes';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
+import { resolveLocale } from './utils/locale';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -12,12 +13,17 @@ const styleStore = useStyleStore();
 const theme = computed(() => (styleStore.isDarkTheme ? darkTheme : null));
 const themeOverrides = computed(() => (styleStore.isDarkTheme ? darkThemeOverrides : lightThemeOverrides));
 
-const { locale } = useI18n();
+const { availableLocales, locale } = useI18n();
+const storedLocale = useStorage('locale', '');
+const browserLocales = navigator.languages.length > 0 ? navigator.languages : [navigator.language];
 
-syncRef(
-  locale,
-  useStorage('locale', locale),
-);
+locale.value = resolveLocale({
+  browserLocales,
+  supportedLocales: availableLocales,
+  savedLocale: storedLocale.value,
+});
+storedLocale.value = locale.value;
+syncRef(locale, storedLocale, { immediate: false });
 </script>
 
 <template>
