@@ -2,7 +2,7 @@
 import { NIcon, useThemeVars } from 'naive-ui';
 
 import { RouterLink } from 'vue-router';
-import { Heart, Home2, Menu2 } from '@vicons/tabler';
+import { Home2, Menu2 } from '@vicons/tabler';
 
 import { storeToRefs } from 'pinia';
 import HeroGradient from '../assets/hero-gradient.svg?component';
@@ -12,15 +12,14 @@ import { useStyleStore } from '@/stores/style.store';
 import { config } from '@/config';
 import type { ToolCategory } from '@/tools/tools.types';
 import { useToolStore } from '@/tools/tools.store';
-import { useTracker } from '@/modules/tracker/tracker.services';
 import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
 
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();
 const version = config.app.version;
 const commitSha = config.app.lastCommitSha.slice(0, 7);
-
-const { tracker } = useTracker();
+const repositoryUrl = 'https://github.com/zero-ljz/it-tools';
+const sourceUrl = `${repositoryUrl}/tree/${commitSha || 'main'}`;
 const { t } = useI18n();
 
 const toolStore = useToolStore();
@@ -63,7 +62,7 @@ const tools = computed<ToolCategory[]>(() => [
           <div>
             {{ $t('app.name', 'IT-Tools') }}
 
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
+            <c-link target="_blank" rel="noopener" :href="sourceUrl">
               v{{ version }}
             </c-link>
 
@@ -73,25 +72,25 @@ const tools = computed<ToolCategory[]>(() => [
                 target="_blank"
                 rel="noopener"
                 type="primary"
-                :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
+                :href="sourceUrl"
               >
                 {{ commitSha }}
               </c-link>
             </template>
           </div>
-          <div>
-            © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
-              Corentin Thomasset
-            </c-link>
-          </div>
+          <div>Based on IT-Tools by Corentin Thomasset</div>
+          <small class="modification-info">
+            Modified version / 修改版本 (2026) ·
+            <a target="_blank" rel="noopener" :href="sourceUrl">Source / 源码</a> ·
+            <a target="_blank" rel="noopener" :href="`${repositoryUrl}/blob/main/LICENSE`">GPLv3</a>
+          </small>
           <small class="filing-info">
-            <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn">湘ICP备2023012254号-1</a>
+            <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">湘ICP备2023012254号-1</a>
             <br>
             <a
               target="_blank"
               rel="noopener"
-              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43012102000907"
+              href="https://beian.mps.gov.cn/#/query/webSearch?code=43012102000907"
             >
               <img
                 alt=""
@@ -134,21 +133,6 @@ const tools = computed<ToolCategory[]>(() => [
         <div>
           <NavbarButtons v-if="!styleStore.isSmallScreen" />
         </div>
-
-        <c-tooltip position="bottom" :tooltip="$t('home.support')">
-          <c-button
-            round
-            href="https://www.buymeacoffee.com/cthmsst"
-            rel="noopener"
-            target="_blank"
-            class="support-button"
-            :bordered="false"
-            @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
-          >
-            {{ $t('home.buyMeACoffee') }}
-            <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
-          </c-button>
-        </c-tooltip>
       </div>
       <slot />
     </template>
@@ -167,24 +151,20 @@ const tools = computed<ToolCategory[]>(() => [
 //     background-size: @size @size;
 // }
 
-.support-button {
-  background: rgb(37, 99, 108);
-  background: linear-gradient(48deg, rgba(37, 99, 108, 1) 0%, rgba(59, 149, 111, 1) 60%, rgba(20, 160, 88, 1) 100%);
-  color: #fff !important;
-  transition: padding ease 0.2s !important;
-
-  &:hover {
-    color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 .footer {
   text-align: center;
   color: #838587;
   margin-top: 20px;
   padding: 20px 0;
+}
+
+.modification-info {
+  display: block;
+  margin-top: 4px;
+
+  a {
+    color: inherit;
+  }
 }
 
 .filing-info {

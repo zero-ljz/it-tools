@@ -5,14 +5,16 @@
 </picture>
 
 <p align="center">
-Useful tools for developer and people working in IT. <a href="https://it-tools.tech">Try it!</a>
+Useful tools for developers and people working in IT.
 </p>
+
+> This repository is a modified version of [IT-Tools](https://github.com/CorentinTh/it-tools) by Corentin Thomasset. Modifications began in August 2026 and are published under the GNU GPLv3. The source for this deployed version is available in this repository.
 
 ## Functionalities and roadmap
 
-Please check the [issues](https://github.com/CorentinTh/it-tools/issues) to see if some feature listed to be implemented.
+Please check the [issues](https://github.com/zero-ljz/it-tools/issues) to see if some feature listed to be implemented.
 
-You have an idea of a tool? Submit a [feature request](https://github.com/CorentinTh/it-tools/issues/new/choose)!
+You have an idea of a tool? Submit a [feature request](https://github.com/zero-ljz/it-tools/issues/new/choose)!
 
 ## Self host
 
@@ -119,9 +121,9 @@ Big thanks to all the people who have already contributed!
 
 ## Credits
 
-Coded with ❤️ by [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=readme).
+Original project by Corentin Thomasset. This modified version is maintained by zero-ljz.
 
-This project is continuously deployed using [vercel.com](https://vercel.com).
+This modified version is deployed using Tencent EdgeOne Pages.
 
 Contributor graph is generated using [contrib.rocks](https://contrib.rocks/preview?repo=corentinth/it-tools).
 

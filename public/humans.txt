@@ -1,4 +1,4 @@
 /* TEAM */
 Developer: Corentin Thomasset
-Site: https://github.com/CorentinTh
-Twitter: @cthmsst
+Modified: 2026 by zero-ljz
+Source: https://github.com/zero-ljz/it-tools
