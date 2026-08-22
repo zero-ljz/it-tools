@@ -5,7 +5,7 @@ import { createSeoHead, siteName } from '@/composable/seo';
 const { t } = useI18n();
 useHead(computed(() => createSeoHead({
   title: t('app.notFoundTitle', `页面不存在 - ${siteName}`),
-  description: '抱歉，您访问的页面不存在。请返回 IApp 开发者工具箱继续使用在线开发工具。',
+  description: '抱歉，您访问的页面不存在。请返回我的应用继续使用在线开发工具。',
   path: '/404',
   noIndex: true,
 })));

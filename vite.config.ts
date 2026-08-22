@@ -57,8 +57,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
       manifest: {
-        name: 'IApp 开发者工具箱',
-        short_name: 'IApp 工具箱',
+        name: '我的应用',
+        short_name: '我的应用',
         description: '免费、开源的在线开发与 IT 工具集合。',
         display: 'standalone',
         lang: 'zh-CN',

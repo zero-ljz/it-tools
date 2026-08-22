@@ -9,9 +9,9 @@ const rootDir = resolve(currentDir, '..');
 const distDir = join(rootDir, 'dist');
 const toolsDir = join(rootDir, 'src', 'tools');
 const siteUrl = (process.env.VITE_SITE_URL || 'https://iapp.run').replace(/\/$/, '');
-const siteName = 'IApp 开发者工具箱';
-const homeTitle = `${siteName} - 免费在线开发工具`;
-const homeDescription = 'IApp 开发者工具箱提供 JSON 格式化、Base64 编解码、时间转换、二维码、加密和网络计算等免费在线工具。';
+const siteName = '我的应用';
+const homeTitle = siteName;
+const homeDescription = '我的应用提供 JSON 格式化、Base64 编解码、时间转换、二维码、加密和网络计算等免费在线工具。';
 
 function htmlEscape(value) {
   return String(value)
@@ -163,7 +163,7 @@ function createFallback(page, tools) {
       <main>
         <h1>${htmlEscape(page.heading || page.title)}</h1>
         <p>${htmlEscape(page.description)}</p>
-        ${page.path === '/' ? '' : '<p><a href="/">返回 IApp 开发者工具箱</a></p>'}
+        ${page.path === '/' ? '' : '<p><a href="/">返回我的应用</a></p>'}
         ${links ? `<nav aria-label="${page.path === '/' ? '全部工具' : '相关工具'}"><ul>${links}</ul></nav>` : ''}
       </main>
       <!-- seo-content:end -->`;
@@ -197,7 +197,7 @@ const pages = [
     path: '/about',
     heading: `关于 ${siteName}`,
     title: `关于 - ${siteName}`,
-    description: '了解 IApp 开发者工具箱的开源许可、技术实现和问题反馈方式。',
+    description: '了解我的应用的开源许可、技术实现和问题反馈方式。',
   },
   ...tools.map(tool => ({
     ...tool,
@@ -229,7 +229,7 @@ const notFoundPage = {
   path: '/404',
   title: `页面不存在 - ${siteName}`,
   heading: '404 页面不存在',
-  description: '抱歉，您访问的页面不存在。请返回 IApp 开发者工具箱继续使用在线开发工具。',
+  description: '抱歉，您访问的页面不存在。请返回我的应用继续使用在线开发工具。',
   noIndex: true,
 };
 await writeFile(join(distDir, '404.html'), renderPage(shell, notFoundPage, tools));

@@ -1,9 +1,9 @@
 import type { HeadObject } from '@vueuse/head';
 import { config } from '@/config';
 
-export const siteName = 'IApp 开发者工具箱';
-export const homeTitle = `${siteName} - 免费在线开发工具`;
-export const homeDescription = 'IApp 开发者工具箱提供 JSON 格式化、Base64 编解码、时间转换、二维码、加密和网络计算等免费在线工具。';
+export const siteName = '我的应用';
+export const homeTitle = siteName;
+export const homeDescription = '我的应用提供 JSON 格式化、Base64 编解码、时间转换、二维码、加密和网络计算等免费在线工具。';
 
 interface SeoHeadOptions {
   title: string
