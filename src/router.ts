@@ -33,7 +33,7 @@ const router = createRouter({
     },
     ...toolsRoutes,
     ...toolsRedirectRoutes,
-    ...(config.app.env === 'development' ? demoRoutes : []),
+    ...(import.meta.env.DEV ? demoRoutes : []),
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ],
 });

@@ -20,11 +20,17 @@ export const config = figue({
       default: '/',
       env: 'BASE_URL',
     },
+    siteUrl: {
+      doc: 'Public canonical URL used by SEO metadata',
+      format: 'string',
+      default: 'https://iapp.run',
+      env: 'VITE_SITE_URL',
+    },
     env: {
       doc: 'Application current env',
       format: 'enum',
       values: ['production', 'development', 'preview', 'test'],
-      default: 'development',
+      default: import.meta.env.PROD ? 'production' : 'development',
       env: 'VITE_VERCEL_ENV',
     },
   },

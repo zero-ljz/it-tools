@@ -1,4 +1,2 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Canonical routes are generated as static directories during the build.
+# Netlify serves dist/404.html automatically for unknown paths.

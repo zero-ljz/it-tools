@@ -1,8 +1,8 @@
 app:
-  name: '我的应用'
-  title: '我的应用'
-  aboutTitle: '关于 - 我的应用'
-  notFoundTitle: '页面不存在 - 我的应用'
+  name: 'IApp 工具箱'
+  title: 'IApp 开发者工具箱 - 免费在线开发工具'
+  aboutTitle: '关于 - IApp 开发者工具箱'
+  notFoundTitle: '页面不存在 - IApp 开发者工具箱'
 home:
   categories:
     newestTools: '最新工具'

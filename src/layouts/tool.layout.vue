@@ -6,6 +6,8 @@ import type { HeadObject } from '@vueuse/head';
 import BaseLayout from './base.layout.vue';
 import FavoriteButton from '@/components/FavoriteButton.vue';
 import type { Tool } from '@/tools/tools.types';
+import { createSeoHead, siteName } from '@/composable/seo';
+import { config } from '@/config';
 
 const route = useRoute();
 const { t } = useI18n();
@@ -15,17 +17,23 @@ const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, Strin
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
 
 const head = computed<HeadObject>(() => ({
-  title: `${toolTitle.value} - ${t('app.name', 'My App')}`,
-  meta: [
-    {
-      name: 'description',
-      content: route.meta?.description as string,
+  ...createSeoHead({
+    title: `${toolTitle.value} - ${siteName}`,
+    description: toolDescription.value,
+    path: route.path,
+    keywords: (route.meta.keywords ?? []) as string[],
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      'name': toolTitle.value,
+      'description': toolDescription.value,
+      'url': new URL(route.path, config.app.siteUrl).toString(),
+      'applicationCategory': 'DeveloperApplication',
+      'operatingSystem': 'Any',
+      'inLanguage': 'zh-CN',
+      'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'CNY' },
     },
-    {
-      name: 'keywords',
-      content: ((route.meta.keywords ?? []) as string[]).join(','),
-    },
-  ],
+  }),
 }));
 useHead(head);
 </script>

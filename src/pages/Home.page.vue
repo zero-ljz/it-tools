@@ -7,11 +7,24 @@ import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
 import { useToolStore } from '@/tools/tools.store';
 import { config } from '@/config';
+import { createSeoHead, homeDescription, homeTitle, siteName } from '@/composable/seo';
 
 const toolStore = useToolStore();
 
 const { t } = useI18n();
-useHead({ title: computed(() => t('app.title', 'My App')) });
+useHead(computed(() => createSeoHead({
+  title: homeTitle,
+  description: homeDescription,
+  path: '/',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'name': siteName,
+    'url': config.app.siteUrl,
+    'description': homeDescription,
+    'inLanguage': 'zh-CN',
+  },
+})));
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
 

@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head';
+import { createSeoHead, siteName } from '@/composable/seo';
 
 const { t } = useI18n();
-useHead({ title: computed(() => t('app.notFoundTitle', 'Page not found - My App')) });
+useHead(computed(() => createSeoHead({
+  title: t('app.notFoundTitle', `页面不存在 - ${siteName}`),
+  description: '抱歉，您访问的页面不存在。请返回 IApp 开发者工具箱继续使用在线开发工具。',
+  path: '/404',
+  noIndex: true,
+})));
 </script>
 
 <template>

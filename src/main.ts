@@ -16,6 +16,10 @@ import { i18nPlugin } from './plugins/i18n.plugin';
 
 registerSW();
 
+// Static SEO tags make every route useful without JavaScript. Once Vue starts,
+// @vueuse/head owns the same tags and keeps them correct during client navigation.
+document.querySelectorAll('[data-seo-static]').forEach(element => element.remove());
+
 const app = createApp(App);
 
 app.use(createPinia());

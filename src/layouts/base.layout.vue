@@ -20,6 +20,7 @@ const version = config.app.version;
 const commitSha = config.app.lastCommitSha.slice(0, 7);
 const repositoryUrl = 'https://github.com/zero-ljz/it-tools';
 const sourceUrl = `${repositoryUrl}/tree/${commitSha || 'main'}`;
+const isDevelopment = import.meta.env.DEV;
 const { t } = useI18n();
 
 const toolStore = useToolStore();
@@ -121,7 +122,7 @@ const tools = computed<ToolCategory[]>(() => [
         </c-tooltip>
 
         <c-tooltip :tooltip="$t('home.uiLib')" position="bottom">
-          <c-button v-if="config.app.env === 'development'" to="/c-lib" circle variant="text" :aria-label="$t('home.uiLib')">
+          <c-button v-if="isDevelopment" to="/c-lib" circle variant="text" :aria-label="$t('home.uiLib')">
             <icon-mdi:brush-variant text-20px />
           </c-button>
         </c-tooltip>
